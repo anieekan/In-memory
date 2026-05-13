@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --color-brand-canvas: #f5f5f5;
+  --color-brand-canvas-soft: #fafafa;
+  --color-brand-canvas-deep: #0c0a09;
+  --color-brand-ink: #0c0a09;
+  --color-brand-primary: #292524;
+  --color-brand-primary-active: #0c0a09;
+  --color-brand-body: #4e4e4e;
+  --color-brand-muted: #777169;
+  --color-brand-surface: #ffffff;
+  --color-brand-surface-strong: #f0efed;
+  --color-brand-hairline: #e7e5e4;
+  --color-brand-hairline-strong: #d6d3d1;
+
+  --color-gradient-mint: #a7e5d3;
+  --color-gradient-peach: #f4c5a8;
+  --color-gradient-lavender: #c8b8e0;
+  --color-gradient-sky: #a8c8e8;
+  --color-gradient-rose: #e8b8c4;
+}
+
+body {
+  background-color: var(--color-brand-canvas);
+  color: var(--color-brand-body);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-brand-ink);
+  font-family: var(--font-serif);
+  font-weight: 400; /* Matching weight nearest to the request's 300 for generic serifs */
+}

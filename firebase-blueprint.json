@@ -1,0 +1,24 @@
+{
+  "entities": {
+    "Tribute": {
+      "title": "Tribute",
+      "description": "A tribute message submitted by a visitor",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "maxLength": 100 },
+        "relation": { "type": "string", "maxLength": 50 },
+        "message": { "type": "string", "maxLength": 2000 },
+        "status": { "type": "string", "enum": ["pending", "approved", "rejected"] },
+        "createdAt": { "type": "object" },
+        "imageUrls": { "type": "array", "items": { "type": "string" }, "maxItems": 3 }
+      },
+      "required": ["name", "relation", "message", "status", "createdAt"]
+    }
+  },
+  "firestore": {
+    "tributes": {
+      "schema": "Tribute",
+      "description": "Collection of all submitted tributes"
+    }
+  }
+}
