@@ -34,8 +34,19 @@ export default function Navbar() {
         className="fixed top-0 left-0 right-0 h-16 flex items-center justify-center px-6 md:px-12 z-50 bg-brand-canvas/80 backdrop-blur-md border-b border-brand-hairline"
       >
         <div className="w-full max-w-7xl flex items-center justify-between md:grid md:grid-cols-3">
-          <Link to="/" className="font-serif text-lg tracking-tight text-brand-ink">
-            David Udoumoh
+          <Link to="/" className="flex items-center gap-3">
+            <img 
+              src="/david-avatar.jpg" 
+              alt="David Udoumoh" 
+              className="w-10 h-10 rounded-full object-cover border border-brand-hairline shadow-sm"
+              onError={(e) => {
+                // Fallback placeholder if image is not yet uploaded
+                (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=200&auto=format&fit=crop";
+              }}
+            />
+            <span className="font-serif text-lg tracking-tight text-brand-ink">
+              David Udoumoh
+            </span>
           </Link>
           
           <div className="hidden md:flex items-center justify-center gap-8 text-[15px] font-medium text-brand-body">

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Calendar, MapPin, Download, ArrowRight, Heart, Image as ImageIcon, Flame } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import TributeForm from '../components/TributeForm';
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -359,59 +360,7 @@ function LeaveTribute() {
   return (
     <section className="py-32 px-6 md:px-12 relative bg-brand-canvas">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-rose/10 rounded-full blur-[100px] pointer-events-none" />
-
-      <motion.div {...fadeIn} className="max-w-3xl mx-auto bg-brand-surface rounded-[24px] p-8 md:p-16 border border-brand-hairline shadow-[0_4px_16px_rgba(0,0,0,0.04)] relative z-10">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-[36px] font-serif tracking-tight text-brand-ink mb-4">
-            Leave a Tribute
-          </h2>
-          <p className="text-brand-body">
-            Share a memory, a story, or a message of condolence. Your words will be a comfort to the family.
-          </p>
-        </div>
-
-        <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="space-y-2">
-              <label className="text-[14px] font-medium text-brand-ink block">Full Name</label>
-              <input 
-                type="text" 
-                placeholder="Jane Doe"
-                className="w-full bg-brand-canvas-soft border border-brand-hairline-strong rounded-[8px] px-4 py-3 text-brand-ink outline-none focus:border-brand-ink transition-colors"
-                required
-              />
-            </div>
-            <div className="space-y-2">
-              <label className="text-[14px] font-medium text-brand-ink block">Relationship</label>
-              <input 
-                type="text" 
-                placeholder="e.g. Friend, Colleague, Family"
-                className="w-full bg-brand-canvas-soft border border-brand-hairline-strong rounded-[8px] px-4 py-3 text-brand-ink outline-none focus:border-brand-ink transition-colors"
-                required
-              />
-            </div>
-          </div>
-
-          <div className="space-y-2">
-             <label className="text-[14px] font-medium text-brand-ink block">Your Tribute Message</label>
-             <textarea 
-               rows={5}
-               placeholder="Write your memories here..."
-               className="w-full bg-brand-canvas-soft border border-brand-hairline-strong rounded-[8px] px-4 py-3 text-brand-ink outline-none focus:border-brand-ink transition-colors resize-y"
-               required
-             />
-          </div>
-
-          <div className="pt-2 border-t border-brand-hairline flex flex-col md:flex-row items-center justify-between gap-6">
-            <button type="button" className="text-[14px] text-brand-muted hover:text-brand-ink flex items-center gap-2 transition-colors">
-               <ImageIcon className="w-4 h-4" /> Add a Photo (Optional)
-            </button>
-            <button type="submit" className="w-full md:w-auto bg-brand-primary text-white rounded-full px-8 py-3 text-[15px] font-medium hover:bg-brand-primary-active transition-colors">
-              Submit Tribute
-            </button>
-          </div>
-        </form>
-      </motion.div>
+      <TributeForm />
     </section>
   );
 }
