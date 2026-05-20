@@ -79,7 +79,7 @@ function Hero() {
       <motion.div {...fadeIn} className="max-w-4xl mx-auto flex flex-col items-center">
         <div className="w-32 h-32 md:w-48 md:h-48 rounded-full border border-brand-hairline p-2 mb-8 bg-brand-surface shadow-sm relative overflow-hidden group">
           <img 
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop" 
+            src="src\assets\img\david-potrait.png" 
             alt="Mr. David Udoumoh"
             className="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition-all duration-700"
           />
@@ -204,7 +204,7 @@ function BiographyPreview() {
         <div className="flex-1 relative w-full aspect-[4/5] md:aspect-square">
           <div className="w-full h-full bg-brand-surface rounded-[24px] border border-brand-hairline p-4 relative z-10 shadow-[0_4px_16px_rgba(0,0,0,0.04)]">
             <img 
-              src="https://images.unsplash.com/photo-1544928147-79a2dbc1f389?q=80&w=800&auto=format&fit=crop" 
+              src="src\assets\img\david-potrait.png" 
               alt="David Udoumoh Memory"
               className="w-full h-full object-cover rounded-[16px] grayscale-[50%]"
             />
@@ -285,16 +285,16 @@ function GalleryPreview() {
 
       <motion.div {...fadeIn} className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 px-6">
          <div className="col-span-2 row-span-2 rounded-[16px] overflow-hidden group">
-            <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=800&auto=format&fit=crop" className="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-700 hover:scale-105" alt="Memory" />
+            <img src="src\assets\img\david-people.jpg" className="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-700 hover:scale-105" alt="Memory" />
          </div>
          <div className="rounded-[16px] overflow-hidden group aspect-square">
-            <img src="https://images.unsplash.com/photo-1493150134366-cb94689b6574?q=80&w=400&auto=format&fit=crop" className="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-700 hover:scale-105" alt="Memory" />
+            <img src="src\assets\img\david-people.jpg" className="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-700 hover:scale-105" alt="Memory" />
          </div>
          <div className="rounded-[16px] overflow-hidden group aspect-square">
-            <img src="https://images.unsplash.com/photo-1541098485292-6fb236a28292?q=80&w=400&auto=format&fit=crop" className="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-700 hover:scale-105" alt="Memory" />
+            <img src="src\assets\img\david-people.jpg" className="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-700 hover:scale-105" alt="Memory" />
          </div>
          <div className="col-span-2 md:col-span-2 rounded-[16px] overflow-hidden group h-48 md:h-auto">
-            <img src="https://images.unsplash.com/photo-1473280025148-643f9b014ce2?q=80&w=800&auto=format&fit=crop" className="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-700 hover:scale-105" alt="Memory" />
+            <img src="src\assets\img\david-people.jpg" className="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-700 hover:scale-105" alt="Memory" />
          </div>
       </motion.div>
       <div className="flex justify-center mt-12">

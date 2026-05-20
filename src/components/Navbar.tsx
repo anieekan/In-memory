@@ -41,7 +41,7 @@ export default function Navbar() {
               className="w-10 h-10 rounded-full object-cover border border-brand-hairline shadow-sm"
               onError={(e) => {
                 // Fallback placeholder if image is not yet uploaded
-                (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=200&auto=format&fit=crop";
+                (e.target as HTMLImageElement).src = "src/assets/img/david-potrait.png";
               }}
             />
             <span className="font-serif text-lg tracking-tight text-brand-ink">

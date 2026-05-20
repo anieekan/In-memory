@@ -2,32 +2,35 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Play, ZoomIn } from 'lucide-react';
 
+const davidPeopleSrc = new URL('../assets/img/david-people.jpg', import.meta.url).href;
+const davidPortraitSrc = new URL('../assets/img/david-potrait.png', import.meta.url).href;
+
 // Sample media data
 const mediaItems = [
   {
     id: 1,
     type: 'image',
-    url: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=1200&auto=format&fit=crop',
-    thumb: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=600&auto=format&fit=crop',
-    title: 'Family Gathering, 1995',
+    url: davidPeopleSrc,
+    thumb: davidPeopleSrc,
+    title: '',
     colSpan: 'md:col-span-2',
     rowSpan: 'md:row-span-2'
   },
   {
     id: 2,
     type: 'image',
-    url: 'https://images.unsplash.com/photo-1493150134366-cb94689b6574?q=80&w=1200&auto=format&fit=crop',
-    thumb: 'https://images.unsplash.com/photo-1493150134366-cb94689b6574?q=80&w=600&auto=format&fit=crop',
-    title: 'Community Award, 2002',
+    url: davidPeopleSrc,
+    thumb: davidPeopleSrc,
+    title: '',
     colSpan: 'md:col-span-1',
     rowSpan: 'md:row-span-1'
   },
   {
     id: 3,
     type: 'image',
-    url: 'https://images.unsplash.com/photo-1541098485292-6fb236a28292?q=80&w=1200&auto=format&fit=crop',
-    thumb: 'https://images.unsplash.com/photo-1541098485292-6fb236a28292?q=80&w=600&auto=format&fit=crop',
-    title: 'Wedding Anniversary, 2014',
+    url: davidPortraitSrc,
+    thumb: davidPortraitSrc,
+    title: '',
     colSpan: 'md:col-span-1',
     rowSpan: 'md:row-span-1'
   },
@@ -43,8 +46,8 @@ const mediaItems = [
   {
     id: 5,
     type: 'image',
-    url: 'https://images.unsplash.com/photo-1473280025148-643f9b014ce2?q=80&w=1200&auto=format&fit=crop',
-    thumb: 'https://images.unsplash.com/photo-1473280025148-643f9b014ce2?q=80&w=600&auto=format&fit=crop',
+    url: davidPeopleSrc,
+    thumb: davidPeopleSrc,
     title: 'Vacation in Paris, 1988',
     colSpan: 'md:col-span-1',
     rowSpan: 'md:row-span-1'
@@ -52,8 +55,8 @@ const mediaItems = [
   {
     id: 6,
     type: 'image',
-    url: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1200&auto=format&fit=crop',
-    thumb: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop',
+    url: davidPeopleSrc,
+    thumb: davidPeopleSrc,
     title: 'Quiet Moments, 2025',
     colSpan: 'md:col-span-1',
     rowSpan: 'md:row-span-1'

@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="font-serif text-xl tracking-tight text-white mb-2">
             David Udoumoh
           </div>
-          <p className="text-[14px]">1950 — 2026</p>
+          <p className="text-[14px]">1977 — 2026</p>
         </div>
         <div className="flex gap-8 text-[14px]">
           <Link to="/biography" className="hover:text-white transition-colors">Biography</Link>
@@ -17,7 +17,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="max-w-6xl mx-auto mt-16 pt-8 border-t border-white/10 text-center text-[13px] opacity-60">
-        Designed with love. 
+        Designed with ❤️ for the memory of David Udoumoh. 
       </div>
     </footer>
   );

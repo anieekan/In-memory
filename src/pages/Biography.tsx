@@ -30,7 +30,7 @@ export default function Biography() {
         className="w-full aspect-video rounded-[24px] bg-brand-surface shadow-sm border border-brand-hairline p-4 mb-16 overflow-hidden relative"
       >
         <img 
-          src="https://images.unsplash.com/photo-1544928147-79a2dbc1f389?q=80&w=1200&auto=format&fit=crop" 
+          src="src\assets\img\david-potrait.png" 
           alt="David Udoumoh Memory"
           className="w-full h-full object-cover rounded-[16px] grayscale-[30%]"
         />
